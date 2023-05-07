@@ -3,8 +3,6 @@
 import {} from "./helpers.js";
 import {getElementData, getMyElementData, createMyElement} from "./rest-services.js";
 
-let element
-
 window.addEventListener("load", initApp);
 
 async function initApp() {
@@ -48,7 +46,6 @@ function addMyElement(myElement) {
     <div class="element-name-main-view">${myElement.name}</div>
     <div class="element-symbol-main-view">${myElement.symbol}</div>
     <div class="element-mass-main-view">${myElement.atomicMass.toFixed(2)}</div>
-
     `;
 
     myElementBox.style.gridColumn = myElement.xpos;
