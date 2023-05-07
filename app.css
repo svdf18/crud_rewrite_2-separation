@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+
+
+body {
+    font-family: 'Spinnaker', sans-serif;
+    color: whitesmoke;
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 3px;
+    width: 100%;
+    font-size: calc(8px + 0.3vw);
+}
+
+.empty-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 55px;
+    background-color: var(--white);
+    border: 1.5px solid var(--blue);
+    font-size: 10px;
+    cursor: pointer;
+}
+  
+.element-name-main-view  {
+    font-size: 8px;
+    font-weight: normal;
+}
+  
+.element-number-main-view {
+    font-size: 10px;
+}
+  
+.element-symbol-main-view  {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.element-mass-main-view  {
+    font-size: 9px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+    padding: 1% 1%; /* Adjust the top and bottom padding as needed */
+    margin: 0px 0px 200px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
