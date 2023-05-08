@@ -74,6 +74,7 @@ function showFormView(emptyElementBox) {
 }
 
 function createMyElementClicked(event) {
+    const element = await getElement(element.name, element.symbol)
     const form = event.target;
 
     const name = form.inputName.value;
